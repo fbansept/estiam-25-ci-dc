@@ -30,7 +30,7 @@ public class AuthController {
             @RequestBody AppUser appUser) {
 
         return ResponseEntity.ok(Map.of(
-                "token", jwtService.generateToken(appUser.getEmail())
+                "tokenn", jwtService.generateToken(appUser.getEmail())
         ));
     }
 
